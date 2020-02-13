@@ -1,0 +1,15 @@
+<table style="width: 100%; border: 1px solid black;">
+  <tr>
+    <th>Comprado</th>
+    <th>Nombre</th>
+    <th>Descripción</th>
+  </tr>
+  <tr *ngFor="let producto of productos">
+    <td>
+      <div *ngIf="producto.comprado">Si</div>
+      <div *ngIf="!producto.comprado">No</div>
+    </td>
+    <td>{{producto.nombre}}</td>
+    <td>{{producto.descripcion}}</td>
+  </tr>
+</table>
