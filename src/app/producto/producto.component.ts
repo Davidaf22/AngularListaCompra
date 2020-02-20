@@ -13,10 +13,10 @@ export class ProductoComponent implements OnInit {
   constructor() {
     this.pruducto = {
       nombre: 'Nombre del producto',
-      descripcion: 'Descripción del producto'
+      descripcion: 'Descripción del producto',
+      comprado: false
     };
   }
   ngOnInit() {
   }
-
 }

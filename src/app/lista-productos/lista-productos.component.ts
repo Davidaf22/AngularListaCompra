@@ -74,4 +74,11 @@ export class ListaProductosComponent implements OnInit {
   }
   ngOnInit() {
   }
+
+  onClickMe(i) {
+    this.productos[i].comprado = true;
+  }
+  onClickMe2(i) {
+    this.productos[i].comprado = false;
+  }
 }
