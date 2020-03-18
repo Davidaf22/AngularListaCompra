@@ -1,6 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import {ServicioDeAutentService} from '../servicio-de-autent.service';
-import {FireDBService} from '../fire-db.service';
 
 @Component({
   selector: 'app-lista-productos',
@@ -11,7 +9,7 @@ export class ListaProductosComponent implements OnInit {
 
   productos: any[];
 
-  constructor(public authCompnent: ServicioDeAutentService, public dbApp: FireDBService) {
+  constructor() {
     const pruducto1 = {
       nombre: 'Fairy',
       descripcion: 'Jabon usado para fregar los platos.',
